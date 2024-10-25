@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <title>Frontend Mentor | Recipe page</title>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
     <main>
         <article>
             <header>
                 <img src="../assets/images/image-omelette.jpeg" 
-                     alt="A picture of egg omelette filled with cheese and green vegetables or meat."
-                     srcset="../assets/images/image-omelette.jpeg 500w, 
-                             ../assets/images/image-omelette.jpeg 1000w">
+                alt="A picture of egg omelette filled with cheese and green vegetables or meat."
+                srcset="../assets/images/image-omelette.jpeg 500w, 
+                        ../assets/images/image-omelette.jpeg 1000w">
+                     
                 <h1>Simple Omelette Recipe</h1>
                 <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
                    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
             </header>
-            <section>
-                <span>Preparation time</span>
+            <section class="preparation-time">
+                <span id="prep-time">Preparation time</span>
                 <ul>
                     <li><span>Total:</span> Approximately 10 minutes</li>
                     <li><span>Preparation:</span> 5 minutes</li>
@@ -87,4 +92,3 @@
     </main>
 </body>
 </html>
-

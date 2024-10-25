@@ -1,0 +1,104 @@
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+
+    /* Typography */
+    --font-body: 'Outfit', sans-serif;
+    --font-heading: 'Young Serif', serif;
+
+    /* Font Sizes */
+    --font-size-body: 16px;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    background-color: var(--stone-100);
+    color: var(--stone-600);
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the main content */
+main {
+    max-width: 768px; /* Set max width for larger screens */
+    margin: 0 auto; /* Center the main content */
+    padding: 20px; /* Add padding for main */
+}
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--stone-900);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color:var(--brown-800);
+}
+
+header {
+    padding: 20px;
+    text-align: left;
+}
+span {
+    color: var(--stone-900);
+    font-weight: bold;
+}
+.preparation-time {
+    background-color: var(--rose-50);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#prep-time {
+    color: var(--rose-800);
+}
+/* Image Styles */
+article img {
+ 
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+/* Article Padding and Border */
+article {
+    padding: 20px;
+    border: 1px solid var(--stone-150); /* Optional: Add a border to the article */
+    border-radius: 10px; /* Rounded corners for the article */
+    background-color: var(--white); /* Background color for the article */
+}
+
+
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border-bottom: 1px solid var(--stone-150);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--stone-150);
+}
+
+/* Set color for only the numerical values in the last column */
+td:last-child {
+    color: var(--brown-800); /* Match the h2 color */
+}
+
